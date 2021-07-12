@@ -1,0 +1,24 @@
+<div *ngIf="showAddPost">
+  <form class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+      <label for="title">Title of the post</label>
+      <input
+        type="text"
+        name="title"
+        [(ngModel)]="title"
+        id="title"
+        placeholder="Title of the post here.."
+      />
+    </div>
+    <div class="form-control">
+      <label for="body">Add your post description</label>
+      <textarea
+        name="body"
+        [(ngModel)]="body"
+        id="body"
+        placeholder="Write the post description here"
+      ></textarea>
+    </div>
+    <input type="submit" value="Save Post" class="btn btn-block" />
+  </form>
+</div>

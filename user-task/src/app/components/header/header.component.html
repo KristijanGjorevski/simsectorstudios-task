@@ -1,0 +1,9 @@
+<header>
+  <app-logo>{{ title }}</app-logo>
+  <app-button
+    *ngIf="hasRoute('/')"
+    color="{{ showAddPost ? 'red' : 'blue' }}"
+    text="{{ showAddPost ? 'Close' : 'Add Post' }}"
+    (btnClick)="toggleAddPost()"
+  ></app-button>
+</header>

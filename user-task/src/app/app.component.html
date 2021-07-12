@@ -1,0 +1,9 @@
+<div class="header">
+  <app-header></app-header>
+</div>
+<div class="form">
+  <app-add-form (onAddPost)="addPost($event)"></app-add-form>
+</div>
+<div class="container">
+  <router-outlet name="first"></router-outlet>
+</div>

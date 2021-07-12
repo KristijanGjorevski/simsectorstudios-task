@@ -1,0 +1,17 @@
+<div class="post">
+  <h3>
+    {{ post.title }}
+    <fa-icon
+      (click)="deleteClick(post)"
+      [icon]="faTimes"
+      [ngStyle]="{ color: 'red' }"
+    ></fa-icon>
+  </h3>
+  <p>{{ post.body }}</p>
+  <span>{{ post.dateCreated }}</span>
+  <div class="user_details">
+    <span>First Name</span>
+    <span>Last Name</span>
+    <span><img alt="profile_pic" /></span>
+  </div>
+</div>
